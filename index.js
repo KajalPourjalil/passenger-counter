@@ -6,3 +6,9 @@ console.log(count);
 
 let myAge = 24;
 console.log(myAge);
+
+let firstBatch = 5
+let secondBatch = 6;
+count = firstBatch
+console.log(firstBatch); 
+console.log(firstBatch + secondBatch);
