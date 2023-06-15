@@ -7,8 +7,22 @@
 //     document.getElementById("")
 // }
 
-function countdown() {
-    console.log(5)
+let lap1 = 34;
+let lap2 = 33;
+let lap3 = 36;
+
+function now() {
+    console.log(lap1 + lap2 + lap3);
 }
 
-countdown()
+now();
+
+let laps = 0;
+
+function increment() {
+    console.log(laps++)
+}
+
+increment();
+increment();
+increment();
