@@ -12,8 +12,23 @@ function increment() {
 
 increment();
 
+let saveEl = document.getElementById('save-el');
+
 function save() {
+    let countstr = " " + count + " - ";
+    saveEl.innerText += countstr;
     console.log(count);
 }
 
 save();
+
+let welcomeEl = document.getElementById('welcome-el');
+
+let greeting = 'Ola ';
+
+let fname = 'Kajal';
+
+
+welcomeEl.innerText = greeting + fname;
+
+welcomeEl.innerHTML += "❤️";
