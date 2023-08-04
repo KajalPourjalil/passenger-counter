@@ -1,20 +1,19 @@
 
 let count = 0;
+
+let countEl = document.getElementById('count-el')
+
+console.log(countEl);
+
 function increment() {
-//     // console.log("clikced")
     count += 1;
-    document.getElementById("count-el").innerHTML = count
-    console.log(count);
-    
+    countEl.innerText = count;
 }
 
-// increment();
-
-// let countEl = document.getElementById("count-el");
-
-// function increment2() {
-//     count+=1;
-//     countEl.innerText = count
-// }
-
 increment();
+
+function save() {
+    console.log(count);
+}
+
+save();
