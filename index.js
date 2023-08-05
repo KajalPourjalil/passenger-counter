@@ -1,9 +1,8 @@
 
-let count = 0;
+let count = -1;
 
 let countEl = document.getElementById('count-el')
 
-console.log(countEl);
 
 function increment() {
     count += 1;
@@ -17,22 +16,27 @@ let saveEl = document.getElementById('save-el');
 function save() {
     let countstr = " " + count + " - ";
     saveEl.textContent += countstr;
+    countEl.textContent = 0;
+    count = 0;
 }
 
 save();
 
 let welcomeEl = document.getElementById('welcome-el');
 
-let greeting = 'Ola ';
+let greeting = 'Bem-vindo!';
 
-let fname = 'Kajal';
-
-
-welcomeEl.innerText = greeting + fname;
-
-welcomeEl.innerHTML += "❤️";
-
-
-function zero() {
-    sav
+function welcome() {
+    welcomeEl.innerText = greeting;
+    welcomeEl.innerHTML += "😁";
 }
+
+welcome();
+
+
+
+
+// welcomeEl.innerText = greeting;
+
+// welcomeEl.innerHTML += "❤️";
+
